@@ -2,6 +2,7 @@ import re
 
 f = open("text.txt", "r")
 fw = open("found.txt", "w")
+
 lines = f.readlines()
 found_mails = []
 for line in lines:
