@@ -7,17 +7,17 @@ EmployeeList = []
 ReceivedInvoiceList = []
 IssuedInvoiceList = []
 
-with open('../../../Downloads/drive-download-20231201T170118Z-001/A01_464933/data/Employees.csv', newline='') as csvfile:
+with open('data/Employees.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         EmployeeList.append(Employee(row['name'], row['surname'], row['salary']))
 
-with open('../../../Downloads/drive-download-20231201T170118Z-001/A01_464933/data/ReceivedInvoice.csv', newline='') as csvfile:
+with open('data/ReceivedInvoice.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         ReceivedInvoiceList.append(ReceivedInvoice(row['date'], row['amount']))
 
-with open('../../../Downloads/drive-download-20231201T170118Z-001/A01_464933/data/IssuedInvoice.csv', newline='') as csvfile:
+with open('data/IssuedInvoice.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         IssuedInvoiceList.append(IssuedInvoice(row['date'], row['amount']))
