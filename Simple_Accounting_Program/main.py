@@ -52,7 +52,5 @@ for month in Months:
     MonthlyIncome.append(monthly)
 
 print(MonthlyIncome)
-
 Bilans = num.subtract(MonthlyIncome,MonthlyExpenses)
-
 print(Bilans)
