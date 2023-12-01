@@ -83,7 +83,6 @@ def t_error(t):
 
 t_ignore = ' \t'
 
-
 def p_command(p):
     'command : OPERATE NUMBER article'
     index = p[3]
@@ -101,6 +100,7 @@ def p_command(p):
     elif p[1] == 'How':
         if p[2] == 0:
             print('No of articles indexed ' + str(index) + ' in shop: ' + str(tab[index]))
+
 
 def p_command_bye(p):
      'command : BYE'
