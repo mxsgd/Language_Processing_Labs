@@ -43,7 +43,6 @@ for month in Months:
 
 print(MonthlyExpenses)
 
-
 for month in Months:
     monthly = 0
     for IssuedInvoice in IssuedInvoiceList:
